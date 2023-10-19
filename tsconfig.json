@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "sourceMap": true,
+      "module": "esnext",
+      "target": "es2019",
+      "moduleResolution": "node",
+      "strict": true,
+      "noUnusedParameters": true,
+      "noUnusedLocals": true,
+      "noImplicitReturns": true,
+      "strictPropertyInitialization": false,
+      "noImplicitAny": false,
+      "importHelpers": true,
+      "noEmitHelpers": true,
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "lib": [
+        "esnext",
+        "dom",
+        "dom.iterable"
+      ],"resolveJsonModule": true
+    },
+  }

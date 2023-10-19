@@ -1,0 +1,85 @@
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+  .container {
+    grid-template-rows: auto auto 1fr 1fr auto auto auto;
+    grid-template-areas:
+      "login  title   title"
+      "menu  menu  menu"
+      "content  content   content"
+      "content  content   content"
+      "extra  extra   extra"
+      "social  social   social"
+      "footer footer footer";
+  }
+@media (max-width: 500px) {
+  .container {
+    grid-template-rows: auto auto 1fr auto auto auto auto;
+    grid-template-areas:
+      "title  title   title"
+      "menu  menu   menu"
+      "content  content   content"
+      "extra  extra   extra"
+      "social  social   social"
+      "footer footer footer"
+      "login  login   login";
+  }
+}
+
+
+nav ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+nav a {
+  background: var(--yellow);
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 20px;
+  border: solid black 1px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.content {
+  grid-area: content;
+}
+
+.extra {
+  grid-area: extra;
+}
+
+.social {
+  grid-area: social;
+}
+
+.title {
+  grid-area: title;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.login {
+  grid-area: login;
+}
+

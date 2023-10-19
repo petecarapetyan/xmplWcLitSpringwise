@@ -1,0 +1,116 @@
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr auto;
+  background-color: white;
+}
+
+@media (min-width: 901px) {
+  .container {
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr auto;
+    grid-template-areas:
+      "login  title   title"
+      "menu  content   content"
+      "menu  content   content"
+      "menu  content   content"
+      "menu  content   content"
+      "menu  content   content"
+      "footer footer footer";
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-areas:
+      "login  title   title"
+      "menu  content   content"
+      "menu  content   content"
+      "menu  content   content"
+      "menu  content   content"
+      "menu  content   content"
+      "footer footer footer";
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-rows: auto auto 1fr 1fr 1fr 1fr auto;
+    grid-template-areas:
+      "title  title   title"
+      "login  menu   menu"
+      "content  content   content"
+      "content  content   content"
+      "menu  content   content"
+      "menu  content   content"
+      "footer footer footer";
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-rows: auto auto auto 1fr 1fr 1fr auto;
+    grid-template-areas:
+      "title  title   title"
+      "login  login   login"
+      "menu  menu   menu"
+      "content  content   content"
+      "content  content   content"
+      "content  content   content"
+      "footer footer footer";
+  }
+}
+
+
+.footer {
+  grid-area: footer;
+  display: flexbox;
+  text-align: center;
+  color: black;
+  border-top: solid black 1px;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: #f7f7f7;
+  border-top: solid black 1px;
+}
+
+.content {
+  grid-area: content;
+  padding: 1em;
+  border-top: solid black 1px;
+}
+
+.extra {
+  grid-area: extra;
+  display: none
+}
+
+.social {
+  grid-area: social;
+  display: none
+}
+
+.title {
+  grid-area: title;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: white;
+}
+
+.logo {
+  grid-area: logo;
+  background-color: blue;
+  display: none;
+}
+
+.login {
+  grid-area: login;
+  background-color: #f7f7f7;
+}
+
+@media (min-width: 600px) {
+  auth-status {
+    height: 64px;
+  }
+}

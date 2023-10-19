@@ -1,0 +1,22 @@
+{
+    "short_name": "FIXME",
+    "name": "FIXME",
+    "description": "FIXME",
+    "icons": [
+      {
+        "src": "/asset/icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/asset/icon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#ffffff"
+  }
