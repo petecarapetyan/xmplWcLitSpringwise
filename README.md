@@ -1,10 +1,10 @@
-# FIXME
+# xampl Web Component Springwise
+
+- using google's Lit library
+- also uses captainCodeman's rdx - surrogate for Redux
 
 
-Danger Will Robinson: All of the README markdown files on this project kinda suck and need a thorough reworking - but for the week of time that this might take.
+This application was generated to have some of a similar table structure as Sprinwise in Sept 2023, with faked data inserted.
 
-Look [here](./doc/TOC.md) for the documentation on this project
-
-If you see FIXME anywhere in this repo, a developer hasn't finished the setup yet, after cloning `egg-starter`!
-
+Does not currently run anywhere without Firebase setup tasks being executed first.
 
